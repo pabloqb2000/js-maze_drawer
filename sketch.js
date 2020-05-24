@@ -74,6 +74,10 @@ function draw() {
 		textSize(28);
 		textAlign(CENTER);
 		text("Maze!", widthCells/2*cellSize, -heightCells*cellSize - 10);
+	} else {
+		translate(width/2 - widthCells/2*cellSize, height/2 + heightCells/2*cellSize);
+		scale(1,-1);
+		cells[0][0].draw();
 	}
 }
 
