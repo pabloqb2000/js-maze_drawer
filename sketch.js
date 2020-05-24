@@ -64,12 +64,16 @@ function draw() {
 		strokeWeight(1);
 		rect(0,0, cellSize*widthCells, cellSize*heightCells);
 
-		// Draw stack size
-		fill(200);
+		// Draw stack size and title
 		scale(1,-1);
+		fill(200);
 		textSize(14);
 		textAlign(LEFT);
 		text("Stack size: " + stack.length.toString(), 0, 24);
+		fill(86, 210, 227);
+		textSize(28);
+		textAlign(CENTER);
+		text("Maze!", widthCells/2*cellSize, -heightCells*cellSize - 10);
 	}
 }
 
