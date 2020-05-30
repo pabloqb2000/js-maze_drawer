@@ -121,17 +121,3 @@ function startLoop() {
 
 	started=true;
 }
-
-function mouseDragged() {
-	UI.mouseDragged();
-}
-
-function mousePressed() {
-	UI.mouseClicked();
-}
-
-// function keyPressed() {
-//   if(keyCode === 83){
-//
-//   }
-// }
