@@ -5,7 +5,7 @@ let widthCells, heightCells, cellSize;
 let started=false;
 
 function setup() {
-	textFont("Sarpanch");
+	textFont("Orbitron");
 	createCanvas(windowWidth, windowHeight);
 	background(32);
 
