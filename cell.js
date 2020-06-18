@@ -5,12 +5,20 @@ class Cell{
         this.visited = false;
         this.verticalWall = true;
         this.horizontalWall = true;
+
+        this.dist = -1; // Distance to the origin
     }
 
     draw() {
         // Draw cell
         noStroke();
-        fill(this.visited ? 32 : 128);
+        if(this.visited && showDepthBtn.active) {
+            colorMode(HSB, 1);
+            fill((this.dist/(widthCells*heightCells/1.5))%1, 1, 1);
+            colorMode(RGB, 255);
+        } else {
+            fill(this.visited ? 32 : 128);
+        }
         rect(this.x*cellSize, this.y*cellSize, cellSize, cellSize);
         // Draw walls
         stroke(200);

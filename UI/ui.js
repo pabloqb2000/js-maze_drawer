@@ -133,7 +133,7 @@ class UI{
         
         // Then click the elements
         for(let e of this.elements) {
-            if(e.clickable)
+            if(e.clickable && e.visible)
                 e.clicked();
         }        
     }
