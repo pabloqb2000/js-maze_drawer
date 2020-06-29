@@ -105,6 +105,7 @@ function draw() {
 		fill(200);
 		textSize(14);
 		textAlign(LEFT);
+		noStroke();
 		text("Stack size: " + stack.length.toString(), 0, 24);
 		fill(86, 210, 227);
 		textSize(28);
