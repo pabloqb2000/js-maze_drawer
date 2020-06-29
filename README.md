@@ -6,6 +6,7 @@ This proyect is hosted by github pages at <a href="https://pabloqb2000.github.io
   - Number of cells in x axis
   - Number of cells in y axis
   - Size of cells
+  - Depth: whether to show the depth in a rainbow scale
 ## Notes
 More info about this algorithm can be found in <a href="https://en.wikipedia.org/wiki/Maze_generation_algorithm">Wikipedia</a>.
 ## Screenshot
